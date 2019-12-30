@@ -1,0 +1,19 @@
+# http 监听的地址
+http:
+  host:
+  port: 9090
+
+crawl:
+  spec: 0 0 */1 * * ?
+  concurrency_num: 3
+  # 抓取提留时间，避免被封 IP，支持 Duration 格式，比如 20s
+  sleep: 30s
+  parser: colly
+
+storage:
+  driver: mysql
+  user: root
+  password:
+  host: localhost
+  port: 3306
+  dbname: crawler
