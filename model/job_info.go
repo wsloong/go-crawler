@@ -3,7 +3,7 @@ package model
 import "time"
 
 type JobInfo struct {
-	ID        uint64
+	ID        int64
 	Name      string    // 职位名称
 	Company   string    // 公司
 	City      string    // 所在城市（地区）

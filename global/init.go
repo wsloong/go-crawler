@@ -15,7 +15,7 @@ var once = new(sync.Once)
 var (
 	NeedAll   = flag.Bool("all", false, "是否全量抓取，默认否")
 	WhichSite = flag.String("site", "", "抓取哪个站点(空标示所有站点)")
-	Config    = flag.String("config", "config", "环境变量档案名称，默认 config")
+	Config    = flag.String("c", "config", "环境变量档案名称，默认 config")
 )
 
 func Init() {

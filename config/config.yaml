@@ -17,3 +17,4 @@ storage:
   host: localhost
   port: 3306
   dbname: crawler
+  charset: utf8mb4
